@@ -1,5 +1,7 @@
+import './App.css';
+
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from
+import { BrowserRouter as Router, Routes, Route } from
 "react-router-dom";
 import Nav from "./components/Nav/Nav";
 import HomePage from "./components/pages/HomePage";
@@ -9,21 +11,36 @@ function App() {
   return (
     <Router>
     <div>
-    <Nav/>
+    < Nav/>
+    <Routes>
+      <Route exact path="/" element={<HomePage/>}/>
+      <Route exact path="./Projects" element={<ProjectPage/>}/>
+      
 
-      <Switch>
-          <Route path="/project">
+
+    </Routes>
+    </div>
+
+    </Router>
+  );
+}
+
+
+
+
+      {/* <Routes>
+          <Route exact path="/project" element={<ProjectPage/>}/>
           <ProjectPage/>
           </Route>
 
           <Route path="/">
           <HomePage/>
           </Route>
-      </Switch>
+      </Routes>
       </div>
-      </Router>
-  );
-}
+//       </Router> */}
+//   );
+// }
 
 
 
