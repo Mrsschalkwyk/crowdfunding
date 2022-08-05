@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from
 import Nav from "./components/Nav/Nav";
 import HomePage from "./components/pages/HomePage";
 import ProjectPage from "./components/pages/ProjectPage";
+import AboutPage from "./components/pages/AboutPage";
+
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
     < Nav/>
     <Routes>
       <Route exact path="/" element={<HomePage/>}/>
-      <Route exact path="./Projects" element={<ProjectPage/>}/>
+      <Route exact path="/ProjectPage" element={<ProjectPage/>}/>
+      <Route exact path="/AboutPage" element={<AboutPage/>}/>
+
       
 
 
