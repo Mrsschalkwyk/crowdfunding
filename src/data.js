@@ -26,7 +26,7 @@ export const oneProject ={
             id :1,
             amount:100,
             comment: " comment for pledge",
-            anonymouse: false,
+            anonymous: false,
             supporter: 3,
             project_id:1,
         },
