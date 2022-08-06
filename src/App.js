@@ -3,10 +3,12 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from
 "react-router-dom";
+
+//import pages here//
 import Nav from "./components/Nav/Nav";
-import HomePage from "./components/pages/HomePage";
-import ProjectPage from "./components/pages/ProjectPage";
-import AboutPage from "./components/pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
