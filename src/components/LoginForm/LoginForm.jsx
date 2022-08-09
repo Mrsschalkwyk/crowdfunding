@@ -11,27 +11,27 @@ function LoginForm() {
 
     const handleChange = (e) => {
         const { id, value } = e.target;
-        setCredentials((prevCredentials)) => ({
+        setCredentials((prevCredentials) => ({
             ...prevCredentials,
             [id]: value,
-            }));
-};
-
-const handleSubmit = (e) => {
-    e.preventDefault();
-    if (credentials.username && credentials.password) {
-        fetch(`${process.env.REACT_APP_API_URL}api-token-auth/`, {
-            method: "post",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body : JSON.stringify(credentials),
-        }).then((response) => {
-            console.log(response.json());
-        });
-        }
+        }));
     };
-}
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (credentials.username && credentials.password) {
+            fetch(`${process.env.REACT_APP_API_URL}api-token-auth/`, {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body : JSON.stringify(credentials),
+            }).then((response) => {
+                console.log(response.json());
+            });
+        }
+    };  
+
     return (
         <form>
             <div>
