@@ -1,0 +1,4 @@
+spread syntax
+{}
+.. pulls all the { } to gether
+{.. cname [id ]}

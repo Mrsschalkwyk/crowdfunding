@@ -16,41 +16,19 @@ function App() {
     <Router>
     <div>
     < Nav/>
-    <Routes>
+
+    {/* <Route path="/project:id">
+    <ProjectPage />
+    </Route> */}
       <Route exact path="/" element={<HomePage/>}/>
-      <Route exact path="/ProjectPage" element={<ProjectPage/>}/>
+      <Route exact path="/ProjectPage/:id" element={<ProjectPage/>}/>
       <Route exact path="/AboutPage" element={<AboutPage/>}/>
-      <Route path="/login"><LoginPage /></Route>
-
+      {/* <Route path="/login"><LoginPage /></Route> */}
       
-
-
-    </Routes>
     </div>
 
     </Router>
   );
 }
-
-
-
-
-      {/* <Routes>
-          <Route exact path="/project" element={<ProjectPage/>}/>
-          <ProjectPage/>
-          </Route>
-
-          <Route path="/">
-          <HomePage/>
-          </Route>
-      </Routes>
-      </div>
-//       </Router> */}
-//   );
-// }
-
-
-
-
 
 export default App;
