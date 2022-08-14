@@ -2,3 +2,10 @@ spread syntax
 {}
 .. pulls all the { } to gether
 {.. cname [id ]}
+
+
+help with
+step 5
+homepage
+
+step4 on getting data from api

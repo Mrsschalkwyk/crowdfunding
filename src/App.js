@@ -9,6 +9,7 @@ import Nav from "./components/Nav/Nav";
 import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import AboutPage from "./pages/AboutPage";
+import LoginPage from "./pages/LoginPage";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <Route exact path="/" element={<HomePage/>}/>
       <Route exact path="/ProjectPage/:id" element={<ProjectPage/>}/>
       <Route exact path="/AboutPage" element={<AboutPage/>}/>
-      {/* <Route path="/login"><LoginPage /></Route> */}
+      <Route exact path="/LoginPage" element={<Login/>}/>
       
     </div>
 

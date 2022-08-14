@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 
@@ -10,7 +10,7 @@ function ProjectPage() {
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}projects/${id}`)
         .then((results) => {
-            return results.json();
+        return results.json();
         })
         .then((data) => {
         setProjectData(data);   
@@ -35,7 +35,7 @@ function ProjectPage() {
                     );
             })}
             </ul>
-        </div>
+            </div>
     );
     
 

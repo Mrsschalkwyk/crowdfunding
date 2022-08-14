@@ -16,15 +16,15 @@ function HomePage() {
         })
         .then((data) => {
         setProjectList(data);
+        });
     }, []);    
 
     return (
         <div id="project-list"> 
         {projectList.map((projectItem, key) => {
-            return <ProjectCard key={key} projectData={projectItem}/>;
+        return <ProjectCard key={key} projectData={projectItem}/>;
         })}
         </div>
     );
-}
 
-export default HomePage
+export default HomePage;
