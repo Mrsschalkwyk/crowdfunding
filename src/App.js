@@ -18,13 +18,11 @@ function App() {
     <div>
     < Nav/>
 
-    {/* <Route path="/project:id">
-    <ProjectPage />
-    </Route> */}
+  
       <Route exact path="/" element={<HomePage/>}/>
       <Route exact path="/ProjectPage/:id" element={<ProjectPage/>}/>
       <Route exact path="/AboutPage" element={<AboutPage/>}/>
-      <Route exact path="/LoginPage" element={<Login/>}/>
+      <Route exact path="/LoginPage" element={<LoginPage/>}/>
       
     </div>
 

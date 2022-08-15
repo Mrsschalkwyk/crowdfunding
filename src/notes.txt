@@ -2,10 +2,13 @@ spread syntax
 {}
 .. pulls all the { } to gether
 {.. cname [id ]}
-
+------------------------------------------
 
 help with
-step 5
-homepage
+step 5 on posting data to api
 
-step4 on getting data from api
+
+data.js is not exporting
+step4 on getting data from api--CF APP SET UP
+APP.js not importing login page
+cant open heroku to set up server for insomnia to run

@@ -19,12 +19,13 @@ function HomePage() {
         });
     }, []);    
 
+    // projectsdata was changed to projectItem
     return (
         <div id="project-list"> 
-        {projectList.map((projectItem, key) => {
-        return <ProjectCard key={key} projectData={projectItem}/>;
+        {projectList.map((projectData, key) => {
+        return <ProjectCard key={key} projectData={projectData}/>;
         })}
         </div>
     );
-
+    }
 export default HomePage;

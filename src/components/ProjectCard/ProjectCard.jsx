@@ -7,7 +7,6 @@ import "./ProjectCard.css";
 
 function ProjectCard(props) {
     const { projectData } = props;
-    console.log(projectData.id)
     return (
         <div className="project-card">
         <Link to={`/project/${projectData.id}`}>
