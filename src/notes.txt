@@ -4,11 +4,6 @@ spread syntax
 {.. cname [id ]}
 ------------------------------------------
 
-help with
-step 5 on posting data to api
-
-
-data.js is not exporting
-step4 on getting data from api--CF APP SET UP
-APP.js not importing login page
-cant open heroku to set up server for insomnia to run
+asyncroness is lots of things happening at the same time. whike waiting wil go do other tasks while waiting
+- a function that 
+syncronyss is one at a time

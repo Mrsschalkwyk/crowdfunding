@@ -18,12 +18,12 @@ function App() {
     <div>
     < Nav/>
 
-  
-      <Route exact path="/" element={<HomePage/>}/>
-      <Route exact path="/ProjectPage/:id" element={<ProjectPage/>}/>
-      <Route exact path="/AboutPage" element={<AboutPage/>}/>
-      <Route exact path="/LoginPage" element={<LoginPage/>}/>
-      
+      <Routes>
+        <Route exact path="/" element={<HomePage/>}/>
+        <Route exact path="/project/:id" element={<ProjectPage/>}/>
+        <Route exact path="/about" element={<AboutPage/>}/>
+        <Route exact path="/login" element={<LoginPage/>}/>
+      </Routes>
     </div>
 
     </Router>
