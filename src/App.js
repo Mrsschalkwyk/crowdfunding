@@ -23,6 +23,8 @@ function App() {
         <Route exact path="/project/:id" element={<ProjectPage/>}/>
         <Route exact path="/about" element={<AboutPage/>}/>
         <Route exact path="/login" element={<LoginPage/>}/>
+
+        {/* path('pledges/', views.PledgeList.as_view()) */}
       </Routes>
     </div>
 

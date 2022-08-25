@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { allProjects } from "../data";
 import ProjectCard from "../components/ProjectCard/ProjectCard.jsx";
 
 
@@ -9,12 +10,12 @@ function HomePage() {
     //this stops it from loading unnessisary only when arry changes
 
     useEffect(() => {
+        // setProjectList(allProjects); page 2 step 4
         fetch(`${process.env.REACT_APP_API_URL}/projects`)
             .then((results) => {
                 return results.json();
             })
             .then((data) => {
-                console.log(data)
                 setProjectList(data);
             });
     }, []);    
@@ -23,7 +24,7 @@ function HomePage() {
     return (
         <div id="project-list"> 
         {projectList.map((projectData, key) => {
-            return <ProjectCard key={key} projectData={projectData}/>;
+        return <ProjectCard key={key} projectData={projectData}/>;
         })}
         </div>
     );
