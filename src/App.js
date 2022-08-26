@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import AboutPage from "./pages/AboutPage";
 import LoginPage from "./pages/LoginPage";
+import CreateProjectPage from "./pages/CreateProjectPage";
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
         <Route exact path="/project/:id" element={<ProjectPage/>}/>
         <Route exact path="/about" element={<AboutPage/>}/>
         <Route exact path="/login" element={<LoginPage/>}/>
-
+        <Route exact path="/create" element={<CreateProjectPage/>}/>
+// create project path//
         {/* path('pledges/', views.PledgeList.as_view()) */}
       </Routes>
     </div>
